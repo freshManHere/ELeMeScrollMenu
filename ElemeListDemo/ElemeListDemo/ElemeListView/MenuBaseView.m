@@ -13,6 +13,7 @@
 
 @property (nonatomic,strong) LeftListTableView *leftTableView;
 
+
 @property (nonatomic,strong) ItemListTableView *listItemView;
 
 

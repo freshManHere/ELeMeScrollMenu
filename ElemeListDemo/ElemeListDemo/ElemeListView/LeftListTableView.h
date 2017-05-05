@@ -10,13 +10,24 @@
 @class LeftListTableView;
 @protocol LeftListTableViewDelegate<NSObject>
 
+/**
+ 点击代理
+
+ @param index 点击的index
+ */
 -(void)leftListTableViewDidSelectedIndex:(NSInteger)index;
 
 @end
 @interface LeftListTableView : UITableView
 
+/**
+ 数据源
+ */
 @property(nonatomic,strong)NSArray *dataArray;
 
+/**
+ 选中的index
+ */
 @property(nonatomic,assign)NSInteger selectedIndex;
 
 @property(nonatomic,weak)id<LeftListTableViewDelegate>selectedDelegate;
